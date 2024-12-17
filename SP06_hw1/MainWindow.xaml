@@ -1,0 +1,31 @@
+﻿<Window x:Class="SP06_hw1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SP06_hw1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <ProgressBar VerticalAlignment="Center" Height="50" Grid.Row="0" x:Name="p1"/>
+        <ProgressBar VerticalAlignment="Center" Height="50" Grid.Row="1" x:Name="p2"/>
+        <ProgressBar VerticalAlignment="Center" Height="50" Grid.Row="2" x:Name="p3"/>
+        <ProgressBar VerticalAlignment="Center" Height="50" Grid.Row="3" x:Name="p4"/>
+
+        <UniformGrid Columns="1" Grid.RowSpan="4" Grid.Column="1">
+            <Button Click="Button_Start">Start processes</Button>
+            <Button Click="Button_Cancel">Cancel</Button>
+        </UniformGrid>
+    </Grid>
+</Window>
